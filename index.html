@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astitav Mittal - Resume Portfolio</title>
+  <!-- Add Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    nav {
+      background-color: #007BFF;
+      text-align: center;
+      padding: 0.5rem 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    nav a:hover {
+      background-color: #0056b3;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      border-bottom: 2px solid #333;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      margin-bottom: 1.5rem;
+    }
+
+    a {
+      color: #007BFF;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Custom Styling */
+    .education-path {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .education-step {
+      flex: 1 1 300px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      text-align: center;
+      margin: 1rem;
+    }
+
+    .education-step h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #007BFF;
+    }
+
+    .education-step p {
+      margin-top: 0;
+      color: #666;
+    }
+
+    .education-step .year {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+
+    .education-step .percentage {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #007BFF;
+      margin-top: 0.5rem;
+    }
+
+    .contact-info {
+      text-align: center;
+      margin-top: 2rem;
+      background-color: #333;
+      color: #fff;
+      padding: 2rem;
+    }
+
+    .email {
+      font-size: 1.2rem;
+    }
+
+    .mobile {
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .social-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      background-color: #007BFF;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 24px;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .social-icon:hover {
+      transform: scale(1.2);
+    }
+
+    .skills {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .skill-icon {
+      font-size: 50px;
+      color: #007BFF;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .skill-icon:hover {
+      transform: scale(1.2);
+    }
+
+    .coding-languages {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .coding-language-icon {
+      font-size: 60px;
+      color: #007BFF;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .coding-language-icon:hover {
+      transform: scale(1.2);
+    }
+
+    .skill-description {
+      max-width: 600px;
+      margin: 2rem auto;
+      text-align: justify;
+    }
+
+    .certifications {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .certification-image {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .certification-name {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      text-align: center;
+    }
+
+    .projects {
+      margin-top: 2rem;
+    }
+
+    .project {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .project h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #007BFF;
+    }
+
+    .project p {
+      margin-top: 0;
+      color: #666;
+    }
+
+    footer {
+      background-color: #007BFF;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    footer p {
+      margin: 0;
+    }
+	.certification-image {
+      transition: transform 0.2s ease-in-out;
+      transform-origin: center center;
+	  width: 100%;
+	  length: 100%;
+    }
+
+    .certification-image:hover {
+      transform: scale(1.5); /* Increase the scale on hover */
+    }
+  </style>
+</head>
+<body>
+  <header>
+  <h1>Astitav Mittal</h1>
+   <h3>I'm a <span id="typing-text"></span></h3>
+    <br><br>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+ <section id="about">
+  <h2 style="text-align: center; font-size: 2.5rem;">About Me</h2>
+  <div style="display: flex; flex-direction: column; gap: 2rem; margin-top: 2rem;">
+    <div style="display: flex; justify-content: space-between;">
+      <div style="flex: 1; margin-right: 2rem;">
+        <h3 style="font-size: 2rem; color: #007BFF; margin-bottom: 1rem;">Welcome to My World of Creativity and Innovation!</h3>
+        <p style="font-size: 1.2rem; line-height: 1.6;">
+          <span style="font-weight: bold; color: #EE6C4D;">I'm Astitav Mittal,</span> a passionate and driven Web Developer with an insatiable thirst for knowledge. I find joy in crafting digital experiences that not only look stunning but also leave a lasting impact on users. From the moment I wrote my first line of code, I knew I had found my calling - a magical realm where imagination meets technology, paving the way for exciting challenges and inspiring breakthroughs.
+        </p>
+      </div>
+      <div style="flex: 1; max-width: 300px;">
+        <img src="astitav.jpeg" alt="Astitav Mittal" style="width: 100%; border-radius: 50%; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);">
+      </div>
+    </div>
+    <p style="font-size: 1.2rem; line-height: 1.6;">
+      <span style="font-weight: bold; color: #EE6C4D;">Apart from coding,</span> I thrive in collaborative environments where creativity flows freely. I believe that the best solutions are born from collective minds, and I eagerly contribute my ideas while embracing the perspectives of others. My passion for teamwork is fueled by the satisfaction of witnessing our joint efforts blossom into awe-inspiring projects.
+    </p>
+    <p style="font-size: 1.2rem; line-height: 1.6;">
+      <span style="font-weight: bold; color: #EE6C4D;">When I'm not immersed</span> in the world of development, you'll likely find me lost in a good book, exploring the outdoors with my camera, or experimenting with new recipes in the kitchen. I believe in maintaining a healthy work-life balance, as it allows me to recharge my creativity and bring fresh perspectives to my projects. My mission as a Web Developer is to create meaningful digital experiences that resonate with users and leave them with a smile. I'm driven by the belief that technology has the power to change lives and bring positive transformations to the world.
+    </p>
+    <p style="font-size: 1.2rem; line-height: 1.6;">
+      Thank you for joining me on this incredible journey. Let's embark on an adventure together and turn visions into reality!
+    </p>
+  </div>
+</section>
+
+</section>
+
+  
+  <section id="education">
+    <h2>Education</h2>
+    <div class="education-path">
+      <!-- College Education -->
+      <div class="education-step">
+        <h3>Chitkara University</h3>
+        <p>Bachelor of Engineering in Computer Science and Engineering</p>
+        <p class="year">2021 - Present</p>
+      </div>
+
+      <!-- School Education - 12th -->
+      <div class="education-step">
+        <h3>Delhi Public School, Patiala</h3>
+        <p>Class 12th (CBSE) - NON MED Stream</p>
+        <p class="year">2020-2021</p>
+        <p class="percentage">Percentage: 87.20%</p>
+      </div>
+
+      <!-- School Education - 10th -->
+      <div class="education-step">
+        <h3>Kaintal School, Patiala</h3>
+        <p>Class 10th (ICSE)</p>
+        <p class="year">2018-2019</p>
+        <p class="percentage">Percentage: 91.57%</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+
+    <div class="coding-languages">
+      <i class="fab fa-html5 coding-language-icon"></i>
+      <i class="fab fa-css3-alt coding-language-icon"></i>
+      <i class="fab fa-js-square coding-language-icon"></i>
+      <i class="fab fa-python coding-language-icon"></i>
+      <!-- Add more coding language icons here -->
+    </div>
+
+    <p class="skill-description">
+      In my Computer Science and Engineering (CSE) course at Chitkara University, I have gained extensive experience in various programming languages and technologies. Some of the languages I have worked with include HTML, CSS, JavaScript, and Python. These languages are the backbone of modern web development, allowing me to create visually appealing and interactive websites.
+
+      Additionally, I have learned about database management systems, data structures, and algorithms, which play a vital role in building efficient and scalable applications. I am also familiar with version control systems like Git, which enable seamless collaboration with other developers.
+
+      As a web developer, I strive to stay updated with the latest trends and best practices in the industry. My passion for coding and problem-solving drives me to explore new technologies and frameworks continuously.
+
+      Let's work together to create innovative solutions and make an impact in the world of web development!
+    </p>
+
+    <h3 style="text-align:center;">Certifications</h3>
+	<br><br>
+    <div class="certifications">
+      <div>
+        <img class="certification-image" src="infy1.jpeg" alt="Certificate 1">
+        <p class="certification-name">Python Programmer</p>
+      </div>
+      <div>
+        <img class="certification-image" src="google.jpeg" alt="Certificate 2">
+        <p class="certification-name">Google Analytics </p>
+      </div>
+      <!-- Add more certification images and names here -->
+    </div>
+  </section>
+  
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <!-- Web Based Calculator project -->
+<div class="project" style="background-color: #f9f9f9;">
+  <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem; color: #007BFF;">Web Based Calculator</h3>
+  <p style="margin-top: 0; color: #666;">
+    The Web Based Calculator project is a fully functional calculator built for the web. It allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division. Additionally, the calculator supports binary to decimal and decimal to binary conversions, providing users with a versatile tool for numeric computations.
+
+    The calculator features a user-friendly interface and responsive design, making it accessible on various devices.
+
+    The calculator was implemented using HTML, CSS, and JavaScript. JavaScript handles the calculations and updates the display in real-time as users input numbers and operators.
+
+    Try out the Web Based Calculator by clicking the link below!
+  </p>
+  <a href="https://amstudio3386.github.io/calculator/" style="display: block; text-align: center; margin-top: 1rem; color: #007BFF; text-decoration: none; font-weight: bold;">Explore Web Based Calculator</a>
+</div>
+
+      <div class="project">
+        <!-- GYM WEBSITE project -->
+<div class="project" style="background-color: #f9f9f9;">
+  <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem; color: #007BFF;">GYM WEBSITE</h3>
+  <p style="margin-top: 0; color: #666;">
+    The GYM WEBSITE project is a web-based application that provides information about a gym, including pricing, available facilities, and trainers. The website is designed to showcase the gym's offerings and attract potential customers. It features an interactive design with modern UI elements to provide an engaging user experience.
+
+    The GYM WEBSITE project was built using HTML, CSS, and JavaScript. The CSS styling ensures a visually appealing layout, while JavaScript adds interactivity to the website, such as interactive pricing cards and image sliders.
+
+    Check back later for the link to explore the GYM WEBSITE project!
+  </p>
+  <a href="#" style="display: block; text-align: center; margin-top: 1rem; color: #007BFF; text-decoration: none; font-weight: bold;">Explore GYM WEBSITE (Link will be added later)</a>
+</div>
+
+      </div>
+      <!-- Add the "Save The Box" project here -->
+      <div class="project" style="background-color: #f9f9f9;">
+      <h3 style="color: #007BFF;">Save The Box</h3>
+      <p>
+         Save The Box is a simple web-based game where the player's goal is to move a box across the screen and avoid obstacles. The box moves automatically, and the player must use arrow keys to control its direction. The game becomes progressively challenging as the box moves faster, and the obstacles become more frequent.
+
+          The project was built using HTML, CSS, and JavaScript. I implemented the game logic, including collision detection, score tracking, and game over handling. Additionally, I added some CSS animations to make the gameplay more engaging.
+
+          Give it a try and see how high you can score in Save The Box!      </p>
+      <a href="https://amstudio3386.github.io/save_the_box/" style="display: block; text-align: center; margin-top: 1rem; color: #007BFF; text-decoration: none; font-weight: bold;">Play Save The Box</a>
+    </div>
+    </div>
+  </section>
+  
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <p class="email">Email: <a href="mailto:astitavmittal@gmail.com">astitavmittal@gmail.com</a></p>
+      <p class="email">Work Email: <a href="mailto:astitav0321.be21@chitkara.edu.in">astitav0321.be21@chitkara.edu.in</a></p>
+      <p class="mobile">Mobile: +91 7009171767</p>
+    </div>
+
+    <div class="social-icons">
+      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com/MittalAsti74636" class="social-icon"><i class="fab fa-twitter"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Astitav Mittal | Web Developer</p>
+  </footer>
+
+  <!-- Add Font Awesome Script -->
+  <script>
+    const typingTextElement = document.getElementById("typing-text");
+    const textOptions = ["Web Developer", "Freelancer", "Graphic Designer", "Video Editor"];
+
+    function typeText(index) {
+      const text = textOptions[index];
+      let currentIndex = 0;
+
+      function type() {
+        typingTextElement.textContent = text.slice(0, currentIndex);
+        currentIndex++;
+
+        if (currentIndex <= text.length) {
+          setTimeout(type, 150); // Typing speed: Adjust the time delay here (in milliseconds)
+        } else {
+          setTimeout(() => {
+            typeText((index + 1) % textOptions.length);
+          }, 1000); // Delay before changing to the next text (in milliseconds)
+        }
+      }
+
+      type();
+    }
+
+    typeText(0); // Start the typing animation
+  </script>
+</body>
+</html>
