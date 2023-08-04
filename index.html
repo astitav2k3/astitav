@@ -31,25 +31,33 @@
       font-size: 1.2rem;
     }
 
-    nav {
-      background-color: #007BFF;
-      text-align: center;
-      padding: 0.5rem 0;
-    }
+   nav {
+  background-color: transparent; /* Remove the red background color */
+  text-align: center;
+  padding: 1rem 0;
+  position: ;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
 
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 1rem;
-      padding: 8px 16px;
-      border-radius: 8px;
-      transition: background-color 0.2s ease-in-out;
-    }
+/* Updated styling for navigation links (buttons) */
+nav a {
+  display: inline-block;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  padding: 0.5rem 1rem; /* Adjust padding for button size */
+  border-radius: 8px;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
 
-    nav a:hover {
-      background-color: #0056b3;
-      text-decoration: none;
-    }
+nav a:hover {
+  background-color: #0056b3;
+  transform: scale(1.1); /* Slight scale-up on hover */
+}
 
     section {
       padding: 2rem;
@@ -269,6 +277,7 @@
     .certification-image:hover {
       transform: scale(1.5); /* Increase the scale on hover */
     }
+	
   </style>
 </head>
 <body>
